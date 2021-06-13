@@ -1,0 +1,27 @@
+{
+  "Description": "AAC audio preset (Stereo) for Accurate.Video",
+  "Name": "MediaConvertPresetAAC-emj7aflnEsrS",
+  "Settings": {
+    "AudioDescriptions": [
+      {
+        "AudioTypeControl": "FOLLOW_INPUT",
+        "AudioSourceName": "Audio Selector 1",
+        "CodecSettings": {
+          "Codec": "AAC",
+          "AacSettings": {
+            "Bitrate": 128000,
+            "CodecProfile": "LC",
+            "CodingMode": "CODING_MODE_2_0",
+            "SampleRate": 48000,
+            "Specification": "MPEG4"
+          }
+        },
+        "LanguageCodeControl": "FOLLOW_INPUT"
+      }
+    ],
+    "ContainerSettings": {
+      "Container": "MP4",
+      "Mp4Settings": {}
+    }
+  }
+}

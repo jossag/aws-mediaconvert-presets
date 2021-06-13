@@ -1,0 +1,81 @@
+{
+  "Description": "H264 video preset for Accurate.Video",
+  "Name": "MediaConvertPresetStandardH-UQc5XUOTs4QE",
+  "Settings": {
+    "VideoDescription": {
+      "ScalingBehavior": "DEFAULT",
+      "VideoPreprocessors": {
+        "Deinterlacer": {
+          "Algorithm": "INTERPOLATE",
+          "Mode": "DEINTERLACE",
+          "Control": "NORMAL"
+        }
+      },
+      "AntiAlias": "ENABLED",
+      "Sharpness": 50,
+      "CodecSettings": {
+        "Codec": "H_264",
+        "H264Settings": {
+          "InterlaceMode": "PROGRESSIVE",
+          "ParNumerator": 1,
+          "NumberReferenceFrames": 3,
+          "Syntax": "DEFAULT",
+          "GopClosedCadence": 1,
+          "HrdBufferInitialFillPercentage": 90,
+          "GopSize": 30,
+          "Slices": 1,
+          "GopBReference": "DISABLED",
+          "HrdBufferSize": 12750000,
+          "ParDenominator": 1,
+          "EntropyEncoding": "CABAC",
+          "Bitrate": 2000000,
+          "RateControlMode": "CBR",
+          "CodecProfile": "HIGH",
+          "MinIInterval": 0,
+          "AdaptiveQuantization": "AUTO",
+          "CodecLevel": "AUTO",
+          "FieldEncoding": "PAFF",
+          "SceneChangeDetect": "ENABLED",
+          "UnregisteredSeiTimecode": "DISABLED",
+          "GopSizeUnits": "FRAMES",
+          "ParControl": "SPECIFIED",
+          "NumberBFramesBetweenReferenceFrames": 1,
+          "RepeatPps": "DISABLED"
+        }
+      },
+      "AfdSignaling": "NONE",
+      "DropFrameTimecode": "ENABLED",
+      "RespondToAfd": "NONE",
+      "ColorMetadata": "INSERT"
+    },
+    "AudioDescriptions": [
+      {
+        "AudioTypeControl": "FOLLOW_INPUT",
+        "AudioSourceName": "Audio Selector 1",
+        "CodecSettings": {
+          "Codec": "AAC",
+          "AacSettings": {
+            "AudioDescriptionBroadcasterMix": "NORMAL",
+            "Bitrate": 128000,
+            "RateControlMode": "CBR",
+            "CodecProfile": "LC",
+            "CodingMode": "CODING_MODE_2_0",
+            "RawFormat": "NONE",
+            "SampleRate": 48000,
+            "Specification": "MPEG4"
+          }
+        },
+        "LanguageCodeControl": "FOLLOW_INPUT",
+        "AudioType": 0
+      }
+    ],
+    "ContainerSettings": {
+      "Container": "MP4",
+      "Mp4Settings": {
+        "CslgAtom": "INCLUDE",
+        "FreeSpaceBox": "EXCLUDE",
+        "MoovPlacement": "PROGRESSIVE_DOWNLOAD"
+      }
+    }
+  }
+}
